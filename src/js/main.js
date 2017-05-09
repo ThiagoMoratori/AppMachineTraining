@@ -1,6 +1,8 @@
 /**
  * Created by Guru Machine on 08/05/2017.
  */
-let nome = "Thiago";
+import nome from './nome';
 
-document.body.insertAdjacentHTML('beforeend', '$(nome) <br />');
+//let nome = 'Thiago';
+
+document.body.insertAdjacentHTML('beforeend', `Opa ${nome}!!! <br />`);

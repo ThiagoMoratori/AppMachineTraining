@@ -63,19 +63,45 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 /**
  * Created by Guru Machine on 08/05/2017.
  */
-let nome = "Thiago 2s";
 
-document.body.insertAdjacentHTML('beforeend', '$(nome) <br />');
+var nome = "Teste";
+
+exports.default = nome;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _nome = __webpack_require__(0);
+
+var _nome2 = _interopRequireDefault(_nome);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//let nome = 'Thiago';
+
+document.body.insertAdjacentHTML('beforeend', 'Opa ' + _nome2.default + '!!! <br />'); /**
+                                                                                        * Created by Guru Machine on 08/05/2017.
+                                                                                        */
 
 /***/ })
 /******/ ]);
